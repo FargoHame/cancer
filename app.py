@@ -67,9 +67,9 @@ def user_report():
       'Smoothness':Smoothness,
       'Compactness':Compactness,
       'Concavity':Concavity,
-      'Concave_points':Concave_points,
+      'Concave points':Concave_points,
       'Symmetry':Symmetry,
-      'Fractal_Dimension':Fractal_Dimension,
+      'Fractal Dimension':Fractal_Dimension,
       
         
   }
@@ -185,7 +185,7 @@ st.pyplot(fig_Concavity)
 st.header('Concave points Value Graph (Yours vs Others)')
 fig_Concavepoints = plt.figure()
 ax7 = sns.scatterplot(x = 'Age', y = 'Concave points', data = df, hue = 'Outcome', palette='mako')
-ax8 = sns.scatterplot(x = user_data['Age'], y = user_data['Concave_points'], s = 150, color = color)
+ax8 = sns.scatterplot(x = user_data['Age'], y = user_data['Concave points'], s = 150, color = color)
 plt.xticks(np.arange(0,100,5))
 plt.yticks(np.arange(0.0,0.25,0.0125))
 plt.title('0 - Healthy & 1 - Unhealthy')
@@ -207,7 +207,7 @@ st.pyplot(fig_Symmetry)
 st.header('Fractal Dimension Value Graph (Yours vs Others)')
 fig_FractalDimension = plt.figure()
 ax7 = sns.scatterplot(x = 'Age', y = 'Fractal Dimension', data = df, hue = 'Outcome', palette='crest')
-ax8 = sns.scatterplot(x = user_data['Age'], y = user_data['Fractal_Dimension'], s = 150, color = color)
+ax8 = sns.scatterplot(x = user_data['Age'], y = user_data['Fractal Dimension'], s = 150, color = color)
 plt.xticks(np.arange(0,100,5))
 plt.yticks(np.arange(0.0,0.1,0.005))
 plt.title('0 - Healthy & 1 - Unhealthy')
